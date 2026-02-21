@@ -1,0 +1,10 @@
+[package]
+name = "quick-switch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.57", features = ["derive"] }
+fuzzy-matcher = "0.3.7"
+walkdir = "2.5.0"
+
