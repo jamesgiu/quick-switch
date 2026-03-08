@@ -106,3 +106,6 @@ pub fn find_final_dir(input_term: &str, bash_history_fp: &str) -> Result<String,
 
     Ok(final_dir)
 }
+
+#[cfg(test)]
+mod tests;
