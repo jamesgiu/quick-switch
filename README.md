@@ -5,7 +5,7 @@
 <h3 align="center">qs
 </h3>
   <p align="center">
-    Mostly untested, undocumented, unapologetic utility program to quickly go to the directory you want to go to (probably), from anywhere on your machine. Walks through your home directories and uses frequency and fuzzy matching to get you there..
+    Mostly untested, undocumented, unapologetic utility program to quickly go to the directory you want to go to (probably), from anywhere on your machine. Walks through your home directories and uses frequency and fuzzy matching to get you there.
     <br />
   </p>
 </div>
