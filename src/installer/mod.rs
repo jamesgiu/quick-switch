@@ -6,7 +6,7 @@ use std::io::Write;
 
 pub fn install() -> Result<(), Box<dyn std::error::Error>> {
     let current_dir = env::current_dir();
-    let bashrc_path = format!("/home/{}/.bashrc", env!("USER"));
+    let bashrc_path = format!("/home/{}/.bashrc", std::env::var("USER").unwrap());
     // Append alias to ~/.bashrc
     let mut bashrc = OpenOptions::new()
     .append(true)
