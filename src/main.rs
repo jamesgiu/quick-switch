@@ -37,7 +37,7 @@ fn main() {
     } 
     else if let Some(directory) = Args::parse().directory {
         let input = directory;
-        let bash_history_fp = format!("/home/{}/.bash_history", env!("USER"));
+        let bash_history_fp = format!("/home/{}/.bash_history", std::env::var("USER").unwrap());
         let final_dir_result = find_final_dir(&input, &bash_history_fp);
 
         println!("{}", final_dir_result.unwrap());
