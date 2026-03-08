@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.5.57", features = ["derive"] }
+color-eyre = "0.6.5"
 fuzzy-matcher = "0.3.7"
 walkdir = "2.5.0"
 
