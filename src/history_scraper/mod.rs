@@ -67,7 +67,7 @@ fn get_closest_final_dir(final_dir_name: &str) -> String {
     // Find full path to folder on system to cd from anywhere
     let mut final_dir = String::new();
 
-    for entry in WalkDir::new(format!("/home/{}/", env!("USER"))).max_depth(5) {
+    for entry in WalkDir::new(format!("/home/{}/", std::env::var("USER").unwrap())).max_depth(5) {
         // Searching home dir...        
         if let Ok(ok_entry) = entry {
             if let Some(fname) = ok_entry.path().to_str() {
